@@ -1,5 +1,6 @@
 const query = require('../helpers/query')
 const jwt = require('jsonwebtoken')
+const bcrypt = require('bcrypt')
 
 exports.user_login = async (req, res, next) => {
    try {
@@ -70,7 +71,7 @@ exports.user_register = async (req, res, next) => {
    }
 }
 
-const bcrypt = require('bcrypt')
+
 const comparePassword = (newPassword, oldPassword) => {
   return new Promise ((resolve, reject) => {
     bcrypt.compare(newPassword, oldPassword, (err, result) => {

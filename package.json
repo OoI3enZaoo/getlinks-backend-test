@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon server.js"
   },
   "author": "Theerapat Vijitpoo",
   "license": "MIT",
   "devDependencies": {
+    "jest": "^23.6.0",
     "nodemon": "^1.18.6"
   },
   "dependencies": {
