@@ -1,6 +1,6 @@
 const restify = require('restify')
 const server = restify.createServer()
-const port = parseInt(process.env.PORT, 10) || 5000
+const port = process.env.PORT
 const morgan = require('morgan')
 const compression = require('compression')
 
