@@ -15,13 +15,15 @@
 
 3.  **Install Dependencies**. `npm install`
 
-4.  **Start node server, serve at localhost:5000**. `npm start`
+4. **Copy nodemon.json to root directory of your project
+
+5.  **Start node server, serve at localhost:5000**. `npm start`
 
   
 
 ## Heroku server
 
-**You can access this project from https://getlinks-testing-backend.herokuapp.com
+**You can access this project at https://getlinks-testing-backend.herokuapp.com
 
   
 
