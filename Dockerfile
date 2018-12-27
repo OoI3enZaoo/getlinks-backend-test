@@ -1,4 +1,7 @@
-FROM node:10.14.2-alpine
+FROM node
+
+RUN apt-get update
+RUN apt-get upgrade -y
 
 # Create app directory
 RUN mkdir -p /usr/src/app
