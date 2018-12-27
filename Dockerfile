@@ -1,8 +1,5 @@
 FROM node
 
-RUN apt-get update
-RUN apt-get upgrade -y
-
 # Create app directory
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
