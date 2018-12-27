@@ -1,15 +1,11 @@
-pipeline {    
-    stages {
-        stage('Build image') {
-            steps {              
-                sh 'docker build -t backend-image .'
-            }
-        }
+pipeline {
+    agent { dockerfile true }
+    stages {        
         stage('Deploy') {
           steps {
             sh 'docker rmi backend-image -f'
             sh 'docker rm backend-container -f'
-            sh 'docker run -d -p 3334:3000 --name backend-contaier backend-image'
+            sh 'docker run -d -p 3334:3000 --name backend-contaier'
           }
         }
     }
