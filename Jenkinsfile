@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build image') {
             steps {              
-                app = docker.build('backend-image')
+                sh 'docker build -t backend-image .'
             }
         }
         stage('Deploy') {
